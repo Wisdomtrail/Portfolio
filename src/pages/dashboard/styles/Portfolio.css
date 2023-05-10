@@ -1,0 +1,129 @@
+.mainContainers {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+  }
+  .mainContainers h1{
+    animation: slideIn 6s ease-in-out;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      color: blue;
+    }
+    50% {
+      transform: translateX(0%);
+      color: green;
+    }
+    100% {
+      transform: translateX(100%);
+      color: red;
+    }
+  }
+.spot{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1cm;
+   }
+.on{
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1cm;
+    }
+
+.v{
+    margin-left: 13cm;
+    margin-right: 1cm;
+    font-size: 1cm;
+    text-decoration: none;
+    }
+.s{
+    margin-right: 1cm;
+    font-size: 1cm;
+     text-decoration: none;
+    color: white;
+}
+.c{
+    margin-right: 1cm;
+    font-size: 1cm;
+    text-decoration: none;
+    color: white;
+    }
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+  }
+.box {
+    background-color: red;
+    height: 3cm;
+    text-align: center;
+   }
+.Me{
+  margin-left: 13cm;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+ }
+.box1 video{ 
+   width: 10cm;
+   border-radius: 20px;
+  }
+
+
+
+.Me.show {
+  opacity: 1;
+}
+.video-container {
+  position: relative;
+  }
+
+
+.Demo{
+  margin-right: 7px;
+  height: 40px;
+  width: 70px;
+  }
+.viewCode{
+  height: 40px;
+}
+.Demo:hover{
+  background-color: rgb(0, 136, 255);
+  color: white;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0.1;
+  margin-left: 3.5cm;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.o{
+  margin-right: 7px;
+}
+.buttons:hover{
+  opacity: 1; 
+}
+.cube{
+  margin-bottom: 1cm;
+  animation: slow 40s;
+  -webkit-animation: slow 1.5s linear 1.5s, fast 1s linear 1s, slow2 1s linear 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slow {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+}
+video,
+img {
+  pointer-events: none;
+}
