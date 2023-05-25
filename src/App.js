@@ -7,7 +7,7 @@ function App() {
        <Router>
         <Routes>
           <Route path='/' element={ <Portfolio/> }/>   
-          <Route path='/skills'/>       
+          <Route path='/skills'/>
         </Routes>
       </Router>
       
